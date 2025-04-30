@@ -1,0 +1,74 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 16px; /* 小さい画面での余白確保 */
+  box-sizing: border-box;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* 最大幅で調整 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #489cf0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.login-form button:hover {
+  background-color: #1565c0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ▼ レスポンシブ対応：画面幅が480px以下の場合の微調整 */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 24px;
+  }
+
+  .login-form h2 {
+    font-size: 1.25rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}

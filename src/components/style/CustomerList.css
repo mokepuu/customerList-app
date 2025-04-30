@@ -1,0 +1,150 @@
+body {
+  font-family: 'UD デジタル教科書体', sans-serif;
+}
+
+/* ページ全体の余白 */
+.customer-list {
+  padding: 90px;
+  box-sizing: border-box;
+}
+
+.customer-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ecf0f5;
+  padding: 12px 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 2px solid #cce5ff;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #3399ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #cce5ff;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.customer-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #ecf0f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.customer-list-controls {
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px;
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  color: #333;
+}
+
+.arrow {
+  margin-left: 4px;
+  color: #aaa;
+}
+
+.active-arrow {
+  margin-left: 4px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* テーブル周り */
+.customer-table {
+  border: 2px solid #e0eff8;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow-x: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.customer-table th {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+.customer-table td {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-top: 1px solid #eee;
+}
+
+/* ▼ レスポンシブ対応：768px以下の場合 */
+@media (max-width: 768px) {
+  .customer-list {
+    padding: 20px;
+  }
+
+  .customer-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .customer-list-title {
+    font-size: 20px;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .customer-table th,
+  .customer-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
