@@ -22,8 +22,8 @@
 
 1. リポジトリをクローンします
 ```bash
-git clone https://github.com/yourusername/simple-crm.git
-cd simple-crm
+git clone https://github.com/mokepuu/customerList-app.git
+cd customerList-app
 ```
 
 2. アプリケーションを起動します
